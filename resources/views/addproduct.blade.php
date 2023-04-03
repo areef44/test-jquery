@@ -62,7 +62,7 @@
                 for (let category of listCategories){
                     html += `<option value="${category.id}">${category.name}</option>`
                 }
-                console.log(listCategories)
+                
                 html = $.parseHTML(html)
                 $("#category").append(html)
             }
@@ -75,7 +75,7 @@
             });
 
         function add(){
-            console.log("hilih")
+         
             let name = $("#name").val()
             let price = $("#price").val()
             let description = $("#description").val()

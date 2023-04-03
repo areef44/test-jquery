@@ -66,7 +66,7 @@
                             let description = $('#description').val(product.description)
                             let price = $('#price').val(product.price)
                             let categories = $('#category_id').val(product.category.id)
-                            console.log(product)
+                          
                         }
                     })
 
@@ -77,12 +77,12 @@
             success: response => {
                 let listCategories = response.data
                 let idCategory = $('#category_id').val()
-                console.log(idCategory)
+                
                 let html = ""
                 for (let category of listCategories){
                     html += `<option ${category.id == idCategory ? 'selected' : ''} value="${category.id}">${category.name}</option>`
                 }
-                console.log(listCategories)
+              
                 html = $.parseHTML(html)
                 $("#category").append(html)
             }
@@ -95,7 +95,7 @@
             });
 
         function update(){
-            console.log("hilih")
+           
             let name = $("#name").val()
             let price = $("#price").val()
             let description = $("#description").val()

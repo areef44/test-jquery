@@ -49,7 +49,6 @@
                             let html = ""
                             let name = $('#name').val(categories.name)
                             let description = $('#description').val(categories.description)
-                            console.log(categories)
                         }
                     })
 
@@ -60,7 +59,6 @@
             });
 
         function update(){
-            console.log("hilih")
             let name = $("#name").val()
             let description = $("#description").val()
 

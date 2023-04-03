@@ -55,7 +55,6 @@
                 let description = $('#description').html(product.description)
                 let price = $('#price').html(product.price)
                 let categories = $('#categories').html(product.category.name)
-                console.log(product)
             }
         })
         
