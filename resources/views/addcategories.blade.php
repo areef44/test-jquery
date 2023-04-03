@@ -50,8 +50,8 @@
             let name = $("#name").val()
             let description = $("#description").val()
 
-            if(name === "") return alert("nama tidak boleh kosong")
-            if(description === "") return alert("description tidak boleh kosong")
+            if(name === "") return alert("name is required")
+            if(description === "") return alert("description is required")
 
 
             let fd = new FormData();
