@@ -1,6 +1,6 @@
 @extends('layouts.templates')
 
-@section('title','Halaman Tambah Categories')
+@section('title','Add Categories')
 
 @section('partials.navbar')
 

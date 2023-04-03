@@ -1,6 +1,6 @@
 @extends('layouts.templates')
 
-@section('title','Halaman Tambah Product')
+@section('title','Add Product')
 
 @section('partials.navbar')
 
@@ -82,11 +82,11 @@
             let category = $("#category").val()
             let picture = $("#picture").prop('files')[0]
 
-            if(name === "") return alert("nama tidak boleh kosong")
-            if(price === "") return alert("harga tidak boleh kosong")
-            if(description === "") return alert("description produk tidak boleh kosong")
-            if(category === "") return alert("kategori produk tidak boleh kosong")
-            if(!picture ) return alert("foto produk tidak boleh kosong")
+            if(name === "") return alert("name is required")
+            if(price === "") return alert("price is required")
+            if(description === "") return alert("description is required")
+            if(category === "") return alert("category is required")
+            if(!picture ) return alert("picture is required")
 
 
             let fd = new FormData();
